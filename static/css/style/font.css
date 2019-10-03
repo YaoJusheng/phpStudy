@@ -1,0 +1,35 @@
+/*字体大小*/
+.php-fs-20 {
+  font-size: 20px;
+}
+
+.php-fw-blod {
+  font-weight: bold;
+}
+
+.php-fw-lighter {
+  font-weight: lighter;
+}
+
+
+/*字体颜色*/
+.php-fc-gray {
+  color: gray;
+}
+
+.php-fc-white {
+  color: white;
+}
+
+.php-fc-orange {
+  color: orange;
+}
+
+/*字体阴影*/
+.php-fts-2 {
+  text-shadow: 2px 2px 2px #333;
+}
+
+.php-fts-1 {
+  text-shadow: 1px 1px 1px #fff;
+}

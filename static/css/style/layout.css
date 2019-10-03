@@ -1,0 +1,59 @@
+html,body {
+  height:100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/*容器*/
+.php-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /*text-align: center;*/
+}
+
+/*内容*/
+.php-content {
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: #fff;
+  overflow-y: auto;
+  height: auto;
+  display: flex;
+}
+
+/*顶部、底部*/
+.php-top,.php-footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+/*左边栏*/
+.php-left {
+  flex: .14;
+  left: 0;
+  height: 100%;
+  /*margin-top: 10px;*/
+  border-right: 1px solid #888;
+}
+
+/*主体*/
+.php-main {
+  flex: .86;
+  /*width: 100%;*/
+  /*height: 100%;*/
+}
+
+/*内容区：内联框架*/
+.php-content-ifr {
+  width: 100%;
+  height: 100%;
+  /*padding: 30px;*/
+  margin: 10px 0;
+  /*border: 1px solid #666;*/
+  border-left: 0;
+  border-right: 0;
+  background-color: inherit;
+}
+

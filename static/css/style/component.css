@@ -1,0 +1,291 @@
+/*对齐*/
+.php-ta-c {
+  text-align: center;
+}
+
+.php-va-c {
+  vertical-align: center;
+}
+
+.php-tva-c {
+  vertical-align: center;
+  text-align: center;
+  padding: 5px auto;
+}
+
+/*布局*/
+.php-dis-f {
+  display: flex;
+}
+
+/*位置*/
+.php-pos-f {
+  position: fixed;
+}
+
+.php-f-left {
+  float: left;
+}
+
+.php-f-right {
+  float: right;
+}
+
+/*内外边距*/
+.php-mr-10 {
+  margin-right: 10px;
+}
+
+.php-ml-10 {
+  margin-left: 10px;
+}
+
+.php-mt-10 {
+  margin-top: 10px;
+}
+
+.php-pd-10 {
+  padding: 10px;
+}
+
+/*边框*/
+.php-bor-r1 {
+  border-right: 1px solid white;
+}
+
+/*背景颜色*/
+.php-bg-green {
+  background-color: green;
+}
+
+.php-bg-blue {
+  background-color: blue;
+}
+
+.php-bg-red {
+  background-color: red;
+}
+
+.php-bg-black {
+  background-color: black;
+}
+
+.php-bg-pink {
+  background-color: pink;
+}
+
+.php-bg-ran {
+  background-color: #FFF5F5;
+}
+
+.php-bg-ran1 {
+  background-color: #060822;
+}
+
+.php-bg-ran2 {
+  background-color: #888585;
+}
+
+.php-bg-ran3 {
+  background-color: #D0C2D0;
+}
+
+/*高宽*/
+.php-h-100 {
+  height: 100px;
+}
+
+.php-h-50 {
+  height: 50px;
+}
+
+.php-h-30 {
+  height: 30px;
+}
+
+.php-h-per5 {
+  height: 5%;
+}
+
+.php-mw-150 {
+  min-width: 150px;
+}
+
+.php-w-per100 {
+  width: 100%;
+}
+
+.php-w-100 {
+  width: 100px;
+}
+
+.php-w-per16 {
+  width: 16%;
+}
+
+.php-right-0 {
+  right: 0;
+}
+
+
+/*------ 组件 -------*/
+.php-top-title {
+  position: fixed;
+  color: #FFD800;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  text-shadow: 2px 2px 2px #333;
+}
+
+.php-top-title a {
+  top: 0;
+  bottom: 0;    
+  background-color: #0055FF;
+  cursor: help;
+}
+
+.php-left-title {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+}
+
+/*菜单 导航*/
+.php-menu {
+  width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  margin: 8px 0;
+  padding: 0;
+}
+
+.php-menu-item {
+  position: relative;
+}
+
+.php-menu-item > input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.php-menu-parent {
+  cursor: pointer;
+}
+
+/*悬停*/
+.php-menu-parent:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+/*已访问*/
+.php-menu-parent:visited {
+  color: #fff;
+  background-color: #5375f1;
+}
+
+/*活动*/
+.php-menu-parent:active {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.php-menu-item-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .3s ease; /*渐变属性*/
+}
+
+.php-menu-child {
+  text-indent: 20px;
+  /*font-weight: bold;*/
+  color: #CANCEL;
+}
+
+.php-menu-child:hover {
+  color: #fff;
+  background-color: #545454;
+}
+
+.php-menu-child:visited {
+  color: #666;
+  /*background-color: #151;*/
+  background-color: #BD2D30;
+}
+
+/*活动*/
+.php-menu-child:active {
+  color: #fff;
+  background-color: #5375f1;
+}
+
+.php-menu :checked + .php-menu-item-list {
+  max-height: 500px;
+}
+
+/*网页底部*/
+.php-foot-ul {
+  padding: 0;
+  /*margin: 2px 200px 2px 200px;*/
+  right: 360px;
+  left: 360px;
+  text-align: center;
+  display: flex;
+  list-style-type: none;
+}
+
+.php-foot-li {
+  vertical-align: center;
+  list-style-type: none;
+  list-style: none;
+  margin: 5px 10px;
+  font-size: 12px;
+  color: #1E1E1E;
+  /*background-color: lightgray;*/
+}
+
+/*伪类选择 - 占位划分*/
+.php-foot-ul li:nth-of-type(1) {
+  flex: 0.14;
+}
+
+.php-foot-ul li:nth-of-type(2) {
+  flex: 0.25;
+}
+
+.php-foot-ul li:nth-of-type(3) {
+  flex: 0.14;
+}
+
+.php-foot-ul li:nth-of-type(4) {
+  flex: 0.45;
+}
+
+/*鼠标事件*/
+.php-foot-li:link {
+  color: inherit;
+  background-color: inherit;
+}
+
+.php-foot-li:visited {
+  color: #4800FF;
+  background-color: inherit;
+}
+
+.php-foot-li:active {
+  color: inherit;
+  background-color: #B200FF;
+}
+
+.php-foot-li:hover {
+  color: white;
+  background-color: #A0A0A0;
+}

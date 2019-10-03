@@ -1,0 +1,11 @@
+{
+ "name": "php-basic",
+ "version": "0.1.0",
+ "main": "main.js",
+ "devDependencies": {
+  "electron-packager": "^14.0.6"
+ },
+ "scripts": {
+    "package": "electron-packager ./ php-basic --win --out php-basic --arch=x64 --electron-version=6.0.10 --overwrite --ignore=node_modules" 
+ } 
+}
